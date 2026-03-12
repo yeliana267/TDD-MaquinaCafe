@@ -11,22 +11,22 @@
 
         public int GetCantidadAzucar()
         {
-            throw new NotImplementedException();
+            return _cantidadAzucar;
         }
 
         public void SetCantidadAzucar(int cantidad)
         {
-            throw new NotImplementedException();
+            _cantidadAzucar = cantidad;
         }
 
         public bool HasAzucar(int cantidad)
         {
-            throw new NotImplementedException();
+            return _cantidadAzucar >= cantidad;
         }
 
         public void GiveAzucar(int cantidad)
         {
-            throw new NotImplementedException();
+            _cantidadAzucar -= cantidad;
         }
     }
 }
