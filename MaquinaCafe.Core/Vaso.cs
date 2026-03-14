@@ -13,22 +13,22 @@
 
         public int GetCantidadVasos()
         {
-            throw new NotImplementedException();
+            return _cantidadVasos;
         }
 
         public int GetContenido()
         {
-            throw new NotImplementedException();
+            return _contenido;
         }
 
         public bool HasVasos(int cantidad)
         {
-            throw new NotImplementedException();
+            return _cantidadVasos >= cantidad;
         }
 
         public void GiveVasos(int cantidad)
         {
-            throw new NotImplementedException();
+            _cantidadVasos -= cantidad;
         }
     }
 }
