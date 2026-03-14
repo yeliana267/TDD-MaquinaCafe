@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MaquinaCafe.Core": {
+      "commandName": "Project"
+    },
+    "Perfil 1": {
+      "commandName": "Executable"
+    }
+  }
+}

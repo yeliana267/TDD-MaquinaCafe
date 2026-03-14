@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="MaquinaCafe.Core/MaquinaCafe.Core.csproj" />
   <Project Path="MaquinaCafe.Tests/MaquinaCafe.Tests.csproj" />
+  <Project Path="MaquinaCafe.UI/MaquinaCafe.UI.csproj" Id="a4eaa453-fe5c-4605-8993-1be819294e1a" />
 </Solution>
