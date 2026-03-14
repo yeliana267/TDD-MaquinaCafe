@@ -11,22 +11,25 @@
 
         public int GetCantidadCafe()
         {
-            throw new NotImplementedException();
+            return _cantidadCafe;   
         }
 
         public void SetCantidadCafe(int cantidad)
         {
-            throw new NotImplementedException();
+            _cantidadCafe = cantidad;
         }
 
         public bool HasCafe(int cantidad)
         {
-            throw new NotImplementedException();
+            return _cantidadCafe >= cantidad;
         }
 
         public void GiveCafe(int cantidad)
         {
-            throw new NotImplementedException();
+            if (HasCafe(cantidad))
+            {
+                _cantidadCafe -= cantidad;
+            }
         }
     }
 }
