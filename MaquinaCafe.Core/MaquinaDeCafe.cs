@@ -20,12 +20,35 @@
 
         public Vaso GetTipoDeVaso(string tipoDeVaso)
         {
-            throw new NotImplementedException();
+            switch (tipoDeVaso.ToLower())
+            {
+                case "pequeno":
+                    return VasosPequeno!;
+                case "mediano":
+                    return VasosMediano!;
+                case "grande":
+                    return VasosGrande!;
+                default:
+                    throw new ArgumentException("Tipo de vaso no válido");
+            }
         }
 
         public string GetVasoDeCafe(Vaso vaso, int cantidadDeVasos, int cantidadDeAzucar)
         {
-            throw new NotImplementedException();
+            if (!vaso.HasVasos(cantidadDeVasos))
+                return "No hay Vasos";
+
+            if (!_cafetera!.HasCafe(vaso.GetContenido() * cantidadDeVasos))
+                return "No hay Cafe";
+
+            if (!_azucarero!.HasAzucar(cantidadDeAzucar))
+                return "No hay Azucar";
+
+            vaso.GiveVasos(cantidadDeVasos);
+            _cafetera.GiveCafe(vaso.GetContenido() * cantidadDeVasos);
+            _azucarero.GiveAzucar(cantidadDeAzucar);
+
+            return "Felicitaciones";
         }
     }
 }
